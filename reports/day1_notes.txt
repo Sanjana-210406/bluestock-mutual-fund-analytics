@@ -1,0 +1,67 @@
+Day 1 - Data Ingestion Observations
+
+1. 01_fund_master.csv
+
+* Shape: (40, 15)
+* No missing values
+* No duplicate rows
+
+2. 02_nav_history.csv
+
+* Shape: (46,000, 3)
+* date column is currently stored as string and should be converted to datetime during cleaning
+* No missing values
+* No duplicates
+
+3. 03_aum_by_fund_house.csv
+
+* No missing values
+* No duplicates
+
+4. 04_monthly_sip_inflows.csv
+
+* yoy_growth_pct contains 12 missing values
+* Likely because first 12 months do not have previous-year data available for YoY calculation
+* No duplicates
+
+5. 05_category_inflows.csv
+
+* No missing values
+* No duplicates
+
+6. 06_industry_folio_count.csv
+
+* No missing values
+* No duplicates
+
+7. 07_scheme_performance.csv
+
+* No missing values
+* No duplicates
+
+8. 08_investor_transactions.csv
+
+* No missing values
+* No duplicates
+
+9. 09_portfolio_holdings.csv
+
+* No missing values
+* No duplicates
+
+10. 10_benchmark_indices.csv
+
+* date column stored as string
+* No missing values
+* No duplicates
+
+Overall Data Quality Summary:
+
+* All 10 datasets loaded successfully.
+* No duplicate records found.
+* Missing values found only in yoy_growth_pct of monthly SIP inflows.
+* Date columns will require datetime conversion during Day 2 cleaning.
+* Datasets are ready for further analysis and validation.
+
+Live NAV fetched successfully from mfapi.in for HDFC Top 100 Direct Fund (AMFI Code: 125497).
+Data saved as HDFC_Top100_NAV.csv.

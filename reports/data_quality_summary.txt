@@ -1,0 +1,15 @@
+DATA QUALITY SUMMARY
+
+Total Schemes: 40
+AMFI Codes Validated: 40
+Missing Codes: 0
+
+Observations:
+- All 10 datasets loaded successfully.
+- No duplicate records found.
+- Missing values found only in yoy_growth_pct column of monthly_sip_inflows.csv.
+- Date columns are currently stored as strings and will be converted to datetime during cleaning.
+- All AMFI codes from fund_master are present in nav_history.
+
+Conclusion:
+Dataset is ready for Day 2 cleaning and SQL database design.
